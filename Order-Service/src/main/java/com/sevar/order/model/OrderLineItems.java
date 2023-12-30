@@ -1,0 +1,25 @@
+package com.sevar.order.model;
+
+import java.math.BigDecimal;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name="t_order_line_items")
+public class OrderLineItems {
+	@Id
+	@GeneratedValue
+	private Long id;
+	private Integer userId;
+	private String skuCode;
+	private BigDecimal price;
+	private Integer quantity;
+}

@@ -1,0 +1,22 @@
+package com.sevar.user.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sevar.user.model.User;
+import com.sevar.user.repository.UserRepository;
+import com.sevar.user.service.exception.UserNotFoundException;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private UserRepository repo;
+	
+	public User save(User user)
+	{
+		return repo.save(null);
+	}
+}

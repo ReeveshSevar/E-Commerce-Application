@@ -1,0 +1,5 @@
+server.port=1004
+
+spring.application.name=USER-SERVICE
+
+spring.config.import=optional:configserver:http://localhost:8888

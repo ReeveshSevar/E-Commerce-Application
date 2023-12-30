@@ -1,0 +1,236 @@
+2023-12-29 14:04:49,104 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2023-12-29 14:04:51,560 [Worker-3: Initializing Java Tooling] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't read workspace state
+java.io.InvalidClassException: org.eclipse.m2e.core.internal.project.registry.VersionlessKey; local class incompatible: stream classdesc serialVersionUID = 0, local class serialVersionUID = 2125977578206347429
+	at java.base/java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:601) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2062) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1909) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2235) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2617) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2468) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472) ~[na:na]
+	at java.base/java.util.HashSet.readObject(HashSet.java:345) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1104) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2434) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472) ~[na:na]
+	at java.base/java.util.HashMap.readObject(HashMap.java:1552) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1104) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2434) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2617) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2468) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.readWorkspaceState(ProjectRegistryReader.java:100) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.<init>(ProjectRegistryManager.java:164) ~[na:na]
+	at org.eclipse.m2e.core.internal.MavenPluginActivator.start(MavenPluginActivator.java:240) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:782) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:775) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:732) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1005) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:357) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:584) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:452) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:39) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getConstructor0(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.newInstance(Class.java:626) ~[na:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:766) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:719) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1005) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:357) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:584) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.container.Module.start(Module.java:452) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[na:na]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612) ~[org.eclipse.osgi_3.13.100.v20180827-1536.jar:na]
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180) ~[org.eclipse.equinox.registry_3.8.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934) ~[org.eclipse.equinox.registry_3.8.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246) ~[org.eclipse.equinox.registry_3.8.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63) ~[org.eclipse.equinox.registry_3.8.100.v20180827-1235.jar:na]
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3669) ~[na:na]
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3645) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3192) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3095) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3157) ~[na:na]
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2128) ~[na:na]
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:4384) ~[na:na]
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:39) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2023-12-29 14:05:04,740 [Worker-4: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+2023-12-29 14:05:04,937 [Worker-4: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+2023-12-29 14:05:05,483 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:API-GATEWAY:1.0 @ D:\MicroServices Project\Ecommerce Application\API-GATEWAY\pom.xml.
+2023-12-29 14:05:07,301 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:05:07,334 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:07,340 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\API-GATEWAY\src\test\resources
+2023-12-29 14:05:10,117 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Config-Server:1.0 @ D:\MicroServices Project\Ecommerce Application\Config-Server\pom.xml.
+2023-12-29 14:05:11,487 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:05:11,507 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:11,511 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Config-Server\src\test\resources
+2023-12-29 14:05:13,958 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Inventory-Registory:1.0 @ D:\MicroServices Project\Ecommerce Application\Inventory-Registory\pom.xml.
+2023-12-29 14:05:15,396 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:05:15,415 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:15,419 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Inventory-Registory\src\test\resources
+2023-12-29 14:05:19,567 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Order-Service:1.0 @ D:\MicroServices Project\Ecommerce Application\Order-Service\pom.xml.
+2023-12-29 14:05:21,054 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:05:21,076 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:21,080 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Order-Service\src\test\resources
+2023-12-29 14:05:23,297 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Product-Service:1.0 @ D:\MicroServices Project\Ecommerce Application\Product-Service\pom.xml.
+2023-12-29 14:05:24,439 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:05:24,443 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:24,446 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Product-Service\src\test\resources
+2023-12-29 14:05:26,480 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Servic-Registory:1.0 @ D:\MicroServices Project\Ecommerce Application\Servic-Registory\pom.xml.
+2023-12-29 14:05:27,762 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:05:27,765 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:27,767 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Servic-Registory\src\test\resources
+2023-12-29 14:05:31,248 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:API-GATEWAY:1.0 @ D:\MicroServices Project\Ecommerce Application\API-GATEWAY\pom.xml.
+2023-12-29 14:05:32,210 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Config-Server:1.0 @ D:\MicroServices Project\Ecommerce Application\Config-Server\pom.xml.
+2023-12-29 14:05:32,814 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Inventory-Registory:1.0 @ D:\MicroServices Project\Ecommerce Application\Inventory-Registory\pom.xml.
+2023-12-29 14:05:33,448 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Order-Service:1.0 @ D:\MicroServices Project\Ecommerce Application\Order-Service\pom.xml.
+2023-12-29 14:05:34,218 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Product-Service:1.0 @ D:\MicroServices Project\Ecommerce Application\Product-Service\pom.xml.
+2023-12-29 14:05:34,732 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Servic-Registory:1.0 @ D:\MicroServices Project\Ecommerce Application\Servic-Registory\pom.xml.
+2023-12-29 14:05:40,461 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:40,461 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:40,463 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\API-GATEWAY\src\test\resources
+2023-12-29 14:05:42,263 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:42,264 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:42,266 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Config-Server\src\test\resources
+2023-12-29 14:05:44,198 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:44,198 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:44,201 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Inventory-Registory\src\test\resources
+2023-12-29 14:05:46,701 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:46,701 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:46,704 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Order-Service\src\test\resources
+2023-12-29 14:05:48,733 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:48,733 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:48,735 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Product-Service\src\test\resources
+2023-12-29 14:05:50,735 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:50,735 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:05:50,737 [Worker-5: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Servic-Registory\src\test\resources
+2023-12-29 14:06:11,032 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-29 14:06:14,047 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:API-GATEWAY:1.0 @ D:\MicroServices Project\Ecommerce Application\API-GATEWAY\pom.xml.
+2023-12-29 14:06:14,904 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Config-Server:1.0 @ D:\MicroServices Project\Ecommerce Application\Config-Server\pom.xml.
+2023-12-29 14:06:15,419 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Inventory-Registory:1.0 @ D:\MicroServices Project\Ecommerce Application\Inventory-Registory\pom.xml.
+2023-12-29 14:06:15,917 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Order-Service:1.0 @ D:\MicroServices Project\Ecommerce Application\Order-Service\pom.xml.
+2023-12-29 14:06:16,482 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Product-Service:1.0 @ D:\MicroServices Project\Ecommerce Application\Product-Service\pom.xml.
+2023-12-29 14:06:17,036 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Servic-Registory:1.0 @ D:\MicroServices Project\Ecommerce Application\Servic-Registory\pom.xml.
+2023-12-29 14:06:19,373 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /API-GATEWAY/src/main/java
+2023-12-29 14:06:19,374 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /API-GATEWAY/src/main/resources
+2023-12-29 14:06:19,374 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /API-GATEWAY/src/main/resources
+2023-12-29 14:06:19,375 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /API-GATEWAY/src/test/java
+2023-12-29 14:06:20,943 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Config-Server/src/main/java
+2023-12-29 14:06:20,943 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Config-Server/src/main/resources
+2023-12-29 14:06:20,943 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Config-Server/src/main/resources
+2023-12-29 14:06:20,944 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Config-Server/src/test/java
+2023-12-29 14:06:21,499 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Inventory-Registory/src/main/java
+2023-12-29 14:06:21,499 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Inventory-Registory/src/main/resources
+2023-12-29 14:06:21,500 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Inventory-Registory/src/main/resources
+2023-12-29 14:06:21,500 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Inventory-Registory/src/test/java
+2023-12-29 14:06:22,092 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Order-Service/src/main/java
+2023-12-29 14:06:22,092 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Order-Service/src/main/resources
+2023-12-29 14:06:22,093 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Order-Service/src/main/resources
+2023-12-29 14:06:22,094 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Order-Service/src/test/java
+2023-12-29 14:06:22,867 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Product-Service/src/main/java
+2023-12-29 14:06:22,867 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Product-Service/src/main/resources
+2023-12-29 14:06:22,868 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Product-Service/src/main/resources
+2023-12-29 14:06:22,868 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Product-Service/src/test/java
+2023-12-29 14:06:23,397 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Servic-Registory/src/main/java
+2023-12-29 14:06:23,397 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Servic-Registory/src/main/resources
+2023-12-29 14:06:23,398 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Servic-Registory/src/main/resources
+2023-12-29 14:06:23,399 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Servic-Registory/src/test/java
+2023-12-29 14:06:26,280 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 15 sec
+2023-12-29 14:06:27,773 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:06:27,792 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:06:27,794 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\API-GATEWAY\src\test\resources
+2023-12-29 14:06:29,231 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:06:29,232 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:06:29,233 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Config-Server\src\test\resources
+2023-12-29 14:06:30,764 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:06:30,766 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:06:30,768 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Inventory-Registory\src\test\resources
+2023-12-29 14:06:32,519 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:06:32,521 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:06:32,523 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Order-Service\src\test\resources
+2023-12-29 14:06:33,715 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:06:33,717 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:06:33,719 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Product-Service\src\test\resources
+2023-12-29 14:06:34,745 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-12-29 14:06:34,747 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-12-29 14:06:34,748 [Worker-4: Building workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\MicroServices Project\Ecommerce Application\Servic-Registory\src\test\resources
+2023-12-29 14:09:49,469 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/3.2.1.RELEASE/spring-boot-starter-parent-3.2.1.RELEASE.pom
+2023-12-29 14:09:49,520 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2023-12-29 14:09:49,522 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-29 14:09:49,559 [Worker-6: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-12-29 14:10:31,318 [Worker-6: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model for com.example:User-Service:1.0
+[FATAL] Non-resolvable parent POM for com.example:User-Service:1.0: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:3.2.1.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+ for project com.example:User-Service:1.0 at D:\MicroServices Project\Ecommerce Application\User-Service\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.example:User-Service:1.0
+[FATAL] Non-resolvable parent POM for com.example:User-Service:1.0: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:3.2.1.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+ for project com.example:User-Service:1.0 at D:\MicroServices Project\Ecommerce Application\User-Service\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:165) ~[na:na]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:116) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259) ~[org.eclipse.m2e.core.ui_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.example:User-Service:1.0
+[FATAL] Non-resolvable parent POM for com.example:User-Service:1.0: Failure to find org.springframework.boot:spring-boot-starter-parent:pom:3.2.1.RELEASE in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at no local POM @ line 5, column 10
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[na:na]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1082) ~[na:na]
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:830) ~[na:na]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:332) ~[na:na]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:158) ~[na:na]
+	... 15 common frames omitted
+2023-12-29 14:10:48,541 [Worker-0: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-29 14:10:48,564 [Worker-0: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec

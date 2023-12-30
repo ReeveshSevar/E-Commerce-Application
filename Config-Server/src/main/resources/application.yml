@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: https://github.com/ReeveshSevar/ECommerce-Properties.git

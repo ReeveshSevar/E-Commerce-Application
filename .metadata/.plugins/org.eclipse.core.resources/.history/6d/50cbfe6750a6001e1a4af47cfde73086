@@ -1,0 +1,5 @@
+package com.sevar.user.consumer;
+
+public interface OrderRestConsumer {
+
+}

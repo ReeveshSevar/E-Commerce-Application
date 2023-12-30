@@ -1,0 +1,10 @@
+package com.sevar.user.service;
+
+
+public interface UserService {
+	
+	User create(User user);
+	
+	User getUser(Integer id);
+	
+}

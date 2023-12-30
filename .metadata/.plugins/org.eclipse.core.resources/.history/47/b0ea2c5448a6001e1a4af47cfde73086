@@ -1,0 +1,5 @@
+package com.sevar.user.service;
+
+public class UserService {
+
+}

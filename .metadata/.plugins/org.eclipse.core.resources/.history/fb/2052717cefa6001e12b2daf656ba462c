@@ -1,0 +1,5 @@
+package com.sevar.user.config;
+
+public class SecurityConfig {
+
+}

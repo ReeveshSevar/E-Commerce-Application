@@ -1,0 +1,13 @@
+package com.sevar.order.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.sevar.order.model.Order;
+
+public interface OrderRepository extends JpaRepository<Order, Long> 
+{
+
+	Order findByUserId(Integer userId);
+	
+}

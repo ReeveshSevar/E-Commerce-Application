@@ -1,0 +1,25 @@
+package com.sevar.user.serviceImpl;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.sevar.user.model.User;
+import com.sevar.user.repository.UserRepository;
+import com.sevar.user.service.UserService;
+
+public class UserServiceImpl implements UserService 
+{
+		@Autowired
+		private UserRepository repo;
+	
+		@Override
+		public User create(User user) {
+			return repo.save(user);
+		}
+		@Override
+		public Optional<User> getOne(Integer id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+		}
+}

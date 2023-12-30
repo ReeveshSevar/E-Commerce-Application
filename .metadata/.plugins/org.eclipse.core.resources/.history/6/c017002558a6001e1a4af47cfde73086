@@ -1,0 +1,16 @@
+package com.sevar.user.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+public class Order{
+	private Long orderId;
+		
+	private String orderNumber;
+	
+	private String description;
+	
+	
+}

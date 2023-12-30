@@ -1,0 +1,18 @@
+package com.sevar.user.consumer;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.sevar.user.model.Order;
+
+@FeignClient("ORDER-SERVICE")
+public interface OrderRestConsumer {
+	
+	@GetMapping("/{userId}")
+	public ResponseEntity<Order> order(@PathVariable("userId") Integer id);
+	
+	
+	
+}

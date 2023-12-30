@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 1111
+  
+spring:
+  application:
+    name: APi-Gateway
+    
+  cloud:
+    gateway:
+      mvc:
+        routes:
+        - id: INVENTORY-SERVICE
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+          - Path=/inventory/**
+          
+        - id: ORDER-SERVICE
+          uri: lb://ORDER-SERVICE
+          predicates:
+          - Path=/order/**
+          
+        - id: PRODUCT-SERVICE
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+          - Path=/product/**

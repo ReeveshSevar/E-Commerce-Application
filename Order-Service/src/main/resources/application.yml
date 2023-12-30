@@ -1,0 +1,39 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    circuitbreakers:
+      enabled: true
+resilience4j:
+  circuitbreaker:
+    instances:
+      inventory:
+        automatic-transition-from-open-to-half-open-enabled: true
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 25
+        permitted-number-of-calls-in-half-open-state: 3
+        register-health-indicator: true
+        sliding-window-size: 5
+        sliding-window-type: count-based
+        wait-duration-in-open-state: 5s
+  retry:
+    instances:
+      inventory:
+        max-attempts: 3
+        wait-duration: 5s
+  timelimiter:
+    instances:
+      inventory:
+        timeout-duration: 3s
+server:
+  port: 1002
+spring:
+  application:
+    name: ORDER-SERVICE
+  config:
+    import: optional:configserver:http://localhost:8888

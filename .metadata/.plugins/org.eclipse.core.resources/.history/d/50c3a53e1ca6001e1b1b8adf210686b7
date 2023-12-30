@@ -1,0 +1,82 @@
+package com.sevar.order.service;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.sevar.order.dto.InventoryResponse;
+import com.sevar.order.dto.OrderLineItemsDto;
+import com.sevar.order.dto.OrderRequest;
+import com.sevar.order.model.Order;
+import com.sevar.order.model.OrderLineItems;
+import com.sevar.order.repository.OrderRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@Transactional
+@RequiredArgsConstructor
+public class OrderService {
+		
+	@Autowired
+	private OrderRepository repo;
+	 
+	private final WebClient.Builder webClientBuilder;
+	
+	
+	public String placeOrder(OrderRequest orderRequest)
+	{
+		Order order = new Order();
+		
+		order.setOrderNumber(UUID.randomUUID().toString());
+		
+		List<OrderLineItems> orderLineItems = orderRequest.getOrderLineItemsDtos()
+														  .stream()
+														  .map(this::mapToDto)
+														  .toList();
+		
+		System.err.println(orderRequest.toString());
+		
+		order.setOrderLineItemsList(orderLineItems);
+		
+				
+		List<String> skuCodes = order.getOrderLineItemsList()
+									 .stream()
+									 .map(OrderLineItems::getSkuCode)
+									 .toList();
+		
+		
+		InventoryResponse[] inventoryResponsesArray =  webClientBuilder.build().get()
+								   .uri("http://INVENTORY-SERVICE/inventory",
+										uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
+								   .retrieve()
+								   .bodyToMono(InventoryResponse[].class)
+								   .block();
+		
+		boolean allProductInStock = Arrays.stream(inventoryResponsesArray).allMatch(InventoryResponse::getIsInStock);
+
+			
+		if(allProductInStock) 
+		{	
+			repo.save(order);
+			return "Order Placed Successfully";
+		}
+		else
+			throw new IllegalArgumentException("Product Is Not In Stock.. Please Try Again Later!!");
+	}
+	
+	public OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto)
+	{
+		OrderLineItems orderLineItems = new OrderLineItems();
+        orderLineItems.setSkuCode(orderLineItemsDto.getSkuCode());
+        orderLineItems.setPrice(orderLineItemsDto.getPrice());
+        orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
+        return orderLineItems;
+	}
+	
+}

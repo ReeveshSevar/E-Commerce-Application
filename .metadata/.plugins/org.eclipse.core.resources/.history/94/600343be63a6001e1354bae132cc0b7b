@@ -1,0 +1,17 @@
+package com.sevar.user.model;
+
+import java.util.List;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.OneToMany;
+
+public class Order
+{
+	private Integer userId;
+
+	private String orderNumber;
+
+	private String description;
+
+	@OneToMany(cascade = CascadeType.ALL)
+	private List<OrderLineItems> orderLineItemsList;
+}

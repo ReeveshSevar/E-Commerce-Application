@@ -1,0 +1,35 @@
+package com.sevar.user.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sevar.user.model.User;
+import com.sevar.user.repository.UserRepository;
+import com.sevar.user.service.exception.UserNotFoundException;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private UserRepository repo;
+	
+	public User create(User user)
+	{
+		return repo.save(user);
+	}
+	
+	public Optional<User> getOneUser(Integer id)
+	{
+		Optional<User> opt = repo.findById(id);
+		if(opt.isPresent())
+		{
+			User use = opt.get();
+			return use;
+		}
+		else
+			throw new UserNotFoundException("User Not Found");
+	}
+	
+}

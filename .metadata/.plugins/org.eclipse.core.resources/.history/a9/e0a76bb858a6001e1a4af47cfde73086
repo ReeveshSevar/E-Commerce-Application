@@ -1,0 +1,8 @@
+package com.sevar.user.consumer;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient("ORDER-SERVICE")
+public interface OrderRestConsumer {
+	
+}
